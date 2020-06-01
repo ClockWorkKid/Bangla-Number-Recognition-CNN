@@ -45,7 +45,7 @@ The voice recognition algorithm works as follows:
 ## Testing Model
 
 - After training model, it was tested with real voice input. As described before, voice data was sampled and sent to the classification network, and the predicted results are printed on screen. Despite being overfit during training, the runtime results are satisfactory. The model was able to handle noise as well.
-[Testing Algorithm](images/recognition.gif)
+![Testing Algorithm](images/recognition.gif)
 
 ## Discussion
 
