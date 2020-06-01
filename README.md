@@ -29,7 +29,7 @@ The voice recognition algorithm works as follows:
 - Voice is sampled at a rate of 16 KHz with a microphone, and a window is created with a size of 8192 samples (approximately 0.5 second sample window).
 - Audio window is converted into a speech spectrogram and a spectrogram is generated. Created spectrogram is passed through a trained convolutional neural network model as image and classified as a number.
 - New samples are passed through the network at runtime, and samples are overlapped for better prediction.
-![Algo Image](../images/algorithm.png)
+![Algo Image](images/algorithm.png)
 
 
 ## Data Collection
@@ -45,7 +45,7 @@ The voice recognition algorithm works as follows:
 ## Testing Model
 
 - After training model, it was tested with real voice input. As described before, voice data was sampled and sent to the classification network, and the predicted results are printed on screen. Despite being overfit during training, the runtime results are satisfactory. The model was able to handle noise as well.
-[Testing Algorithm](../images/recognition.gif)
+[Testing Algorithm](images/recognition.gif)
 
 ## Discussion
 
