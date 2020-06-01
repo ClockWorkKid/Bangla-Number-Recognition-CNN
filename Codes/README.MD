@@ -1,6 +1,6 @@
 ## Running the Project Demo
 
-- Be sure to clone the entire project and finish installing the <a href="https://www.mathworks.com/help/deeplearning/ug/deep-learning-speech-recognition.html">required support package.</a>
+- Be sure to clone the entire project and finish installing the <a href="https://www.mathworks.com/matlabcentral/fileexchange/45182-matlab-support-package-for-usb-webcams">required support package.</a>
 
 - Start MATLAB and selecting the "codes" folder as MATLAB work directory, run the "Main_Code.m" file (Headphone recommended). The following start screen should pop up.
 

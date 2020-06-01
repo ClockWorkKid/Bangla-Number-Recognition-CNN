@@ -20,7 +20,7 @@
 ## Project Overview
 
 The project focuses on development of Bangla Speech Recognition, and as a subsection of the process, a convolutional neural network was trained to recognize bengali numbers from voice input. As a practical implementation of the number recogntion system, a simple interface has been designed targeting a digital library reception counter. Head on to the <a href="https://github.com/ClockWorkKid/Bangla-Number-Recognition-CNN/tree/master/Codes">"Codes"</a> directory for the complete working project. For an overview of the dataset generation and model training process, head to the <a href="https://github.com/ClockWorkKid/Bangla-Number-Recognition-CNN/tree/master/Dataset">"Dataset"</a> directory. The instructions can be followed to create your own dataset for training and testing the speech recognition algorithm.
-(The project was built on MATLAB R2019a, compatibility has not been tested on previous versions of MATLAB.)
+(After successful running of the project, some changes were done on MATLAB, so the project might not run on all versions)
 
 ## Algorithm
 
@@ -29,6 +29,8 @@ The voice recognition algorithm works as follows:
 - Voice is sampled at a rate of 16 KHz with a microphone, and a window is created with a size of 8192 samples (approximately 0.5 second sample window).
 - Audio window is converted into a speech spectrogram and a spectrogram is generated. Created spectrogram is passed through a trained convolutional neural network model as image and classified as a number.
 - New samples are passed through the network at runtime, and samples are overlapped for better prediction.
+![Algo Image](../images/algorithm.png)
+
 
 ## Data Collection
 
@@ -43,6 +45,7 @@ The voice recognition algorithm works as follows:
 ## Testing Model
 
 - After training model, it was tested with real voice input. As described before, voice data was sampled and sent to the classification network, and the predicted results are printed on screen. Despite being overfit during training, the runtime results are satisfactory. The model was able to handle noise as well.
+[Testing Algorithm](../images/recognition.gif)
 
 ## Discussion
 
@@ -60,14 +63,16 @@ Further work can be done for improving the network performance.
 
 ## Team
 
-- Lead: Mir Sayeed Mohammad (Undergrad Student, BUET EEE)
-- Co-lead: Md. Asif Iqbal (Undergrad Student, BUET EEE)
-- Member: Dipon Paul (Undergrad Student, BUET EEE)
-- Member: Sohan Mahmud (Undergrad Student, BUET EEE)
-- Member: Azizul Zahid (Undergrad Student, BUET EEE)
+### Student Members:
+- Mir Sayeed Mohammad (Undergrad Student, BUET EEE)
+- Md. Asif Iqbal (Undergrad Student, BUET EEE)
+- Dipon Paul (Undergrad Student, BUET EEE)
+- Sohan Mahmud (Undergrad Student, BUET EEE)
+- Azizul Zahid (Undergrad Student, BUET EEE)
 
-- Supervisor: Dr. Celia Shahnaz (Professor, Dept of EEE, BUET)
-- Supervisor: Sadman Sakib Ahbab Jarif (Lecturer, Dept of EEE, BUET)
+### Supervisor:
+- Dr. Celia Shahnaz (Professor, Dept of EEE, BUET)
+- Sadman Sakib Ahbab Jarif (Lecturer, Dept of EEE, BUET)
 
 
 
